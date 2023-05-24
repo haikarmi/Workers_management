@@ -19,3 +19,12 @@ void CustomerEmployee::print() const {
 
 
 }
+
+CustomerEmployee::CustomerEmployee(const CustomerEmployee &other): Customer(other) , Employee(other), Person(other){
+
+
+}
+
+void CustomerEmployee::buy(double buy) {
+    Customer::buy(buy=buy*0.9);
+}

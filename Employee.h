@@ -19,6 +19,9 @@ public:
 
      virtual void print() const;
      float get_salary() const {return salary;}
+     float set_salary(float salary);
+
+
 };
 
 #endif //UNTITLED112_EMPLOYEE_H

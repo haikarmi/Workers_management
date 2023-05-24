@@ -22,4 +22,12 @@ void Employee::print() const {
     cout<<" the salary is: "<<salary<<'$'<<endl;
 }
 
+float Employee::set_salary(float salary) {
+    while (salary < (this->salary)/2 || salary> this->salary*2){
+        cout<<"the salary is not good '\n enter new salary "<<endl;
+        cin>>salary;
+    }
+    this->salary=salary;
+}
+
 

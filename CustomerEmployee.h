@@ -13,7 +13,9 @@ class CustomerEmployee: public Customer, public Employee{
 public:
 
     CustomerEmployee(char *name, long id, float salary, double *paylist, int size);
+    CustomerEmployee(const CustomerEmployee &other);
     virtual void print() const;
+    void buy(double buy);
 };
 
 

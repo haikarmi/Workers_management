@@ -35,6 +35,21 @@ void Customer::print() const {
     cout<< " the id num is: "<< get_id()<< endl;
     cout << " the pay list is: " << endl;
     for (int i = 0; i < size; ++i) {
-        cout << "the lest pay num " << (i + 1) << ':' << paylist[i] << '$' << endl;
+        cout << "the lest pay num " << (i + 1) << ")\t" << paylist[i] << '$' << endl;
     }
+}
+
+void Customer::buy(double buy) {
+    double * temp =new double [size+1];
+    for (int i = 0; i < size; ++i) {
+        temp[i]=paylist[i];
+    }
+    temp[size]=buy;
+    size=size+1;
+    paylist=new double [size];
+    for (int i = 0; i < size; ++i) {
+        paylist[i]=temp[i];
+    }
+    delete[]temp;
+
 }

@@ -17,6 +17,8 @@ public:
     Customer(const Customer& other);
     virtual ~ Customer();
     virtual void print() const;
+    virtual void buy(double buy);
+
 
 };
 
