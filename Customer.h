@@ -20,6 +20,7 @@ public:
     virtual void buy(double buy);
 
 
+
 };
 
 

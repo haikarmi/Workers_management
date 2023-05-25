@@ -16,7 +16,6 @@ public:
     Person(const Person &person);
     virtual void print() const = 0;
     virtual ~Person();
-protected:
     char * get_name() const {return name;}
     long get_id() const {return id;}
 
