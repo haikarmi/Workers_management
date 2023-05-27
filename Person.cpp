@@ -22,10 +22,7 @@ Person::Person(const Person &person) {
 
 }
 
-//void Person::print() {
-//cout<< " the name is: "<< name<<endl;
-//cout<< " the id num is: "<< id<< endl;
-//}
+
 
 Person::~Person() {
     delete[] name; // Deallocate the memory for the color

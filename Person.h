@@ -5,23 +5,24 @@
 #ifndef UNTITLED112_PERSON_H
 #define UNTITLED112_PERSON_H
 
-
-class  Person  {
+class Person {
 private:
-    char *name;
+    char* name; // Consider using std::string for better memory management
     long id;
+
 public:
+    Person(char* name, long id);
+    Person(const Person& person);
 
-    Person (char * name, long id);
-    Person(const Person &person);
+    // Abstract function for printing person's information
     virtual void print() const = 0;
-    virtual ~Person();
-    char * get_name() const {return name;}
-    long get_id() const {return id;}
 
+    virtual ~Person(); // Virtual destructor for proper cleanup
 
+    // Getter functions for accessing member variables
+    char* get_name() const { return name; } // Consider using const std::string& or std::string
+    long get_id() const { return id; }
 
 };
-
 
 #endif //UNTITLED112_PERSON_H

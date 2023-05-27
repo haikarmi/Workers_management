@@ -7,21 +7,25 @@
 
 #include "Person.h"
 
-
 class Employee : public virtual Person {
 private:
     float salary;
 
 public:
+    // Constructor
     Employee(char *name, long id, float salary);
 
+    // Copy constructor
     Employee(const Employee &other);
 
-     virtual void print() const;
-     float get_salary() const {return salary;}
-     float set_salary(float salary);
+    // Print function
+    virtual void print() const;
 
+    // Getter for salary
+    float get_salary() const { return salary; }
 
+    // Setter for salary
+    float set_salary(float salary);
 };
 
 #endif //UNTITLED112_EMPLOYEE_H

@@ -7,17 +7,13 @@
 
 #include "LinkedList.h"
 
-
 class MyMain {
 private:
     LinkedList list1;
 public:
     void print_menu_main();
-
+    // Class constructor
     MyMain();
-
-
 };
-
 
 #endif //UNTITLED112_MYMAIN_H
